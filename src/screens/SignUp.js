@@ -90,7 +90,7 @@ export default function SignUp() {
       ) {
         try {
           const response = await axios.post(
-            "http://ec2-65-0-133-29.ap-south-1.compute.amazonaws.com:8000/api/student",
+            "/api/student",
             {
               firstname,
               lastname,
@@ -127,7 +127,7 @@ export default function SignUp() {
       ) {
         try {
           const response = await axios.post(
-            "http://ec2-65-0-133-29.ap-south-1.compute.amazonaws.com:8000/api/faculty",
+            "/api/faculty",
             {
               firstname,
               lastname,

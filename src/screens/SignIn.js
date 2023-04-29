@@ -54,7 +54,7 @@ export default function SignIn() {
           //const token = localStorage.getItem("token");
 
           const response = await axios.post(
-            "http://ec2-65-0-133-29.ap-south-1.compute.amazonaws.com:8000/api/auth/admin",
+            "/api/auth/admin",
             {
               email: enteredEmail,
               password: enteredPassword,
@@ -89,7 +89,7 @@ export default function SignIn() {
       case "faculty":
         try {
           const response = await axios.post(
-            "http://ec2-65-0-133-29.ap-south-1.compute.amazonaws.com:8000/api/auth/faculty",
+            "/api/auth/faculty",
             {
               email: enteredEmail,
               password: enteredPassword,
@@ -130,7 +130,7 @@ export default function SignIn() {
       case "student":
         try {
           const response = await axios.post(
-            "http://ec2-65-0-133-29.ap-south-1.compute.amazonaws.com:8000/api/auth/student",
+            "/api/auth/student",
             {
               email: enteredEmail,
               password: enteredPassword,
