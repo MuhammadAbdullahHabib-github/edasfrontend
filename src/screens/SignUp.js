@@ -90,7 +90,7 @@ export default function SignUp() {
       ) {
         try {
           const response = await axios.post(
-            "/api/student",
+            "65.0.133.29:80/api/student",
             {
               firstname,
               lastname,
@@ -127,7 +127,7 @@ export default function SignUp() {
       ) {
         try {
           const response = await axios.post(
-            "/api/faculty",
+            "65.0.133.29:80/api/faculty",
             {
               firstname,
               lastname,

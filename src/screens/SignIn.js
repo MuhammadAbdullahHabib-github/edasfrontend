@@ -54,7 +54,7 @@ export default function SignIn() {
           //const token = localStorage.getItem("token");
 
           const response = await axios.post(
-            "/api/auth/admin",
+            "65.0.133.29/api/auth/admin",
             {
               email: enteredEmail,
               password: enteredPassword,
@@ -89,7 +89,7 @@ export default function SignIn() {
       case "faculty":
         try {
           const response = await axios.post(
-            "/api/auth/faculty",
+            "65.0.133.29:80/api/auth/faculty",
             {
               email: enteredEmail,
               password: enteredPassword,
@@ -130,7 +130,7 @@ export default function SignIn() {
       case "student":
         try {
           const response = await axios.post(
-            "/api/auth/student",
+            "65.0.133.29:80/api/auth/student",
             {
               email: enteredEmail,
               password: enteredPassword,
